@@ -10,6 +10,6 @@
 
 @interface NSObject (kvi_SafeNil)
 
-- (void)kvi_performSelectorIfRespondToWithParamethers;
+- (void)kvi_performSelector:(SEL)selector;
 
 @end

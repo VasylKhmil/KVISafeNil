@@ -14,7 +14,6 @@
     if (object != nil) {
         
         [self addObject:object];
-        
     }
 }
 

@@ -9,4 +9,6 @@
 #import "NSMutableArray+kvi_SafeNil.h"
 #import "NSMutableDictionary+kvi_SafeNil.h"
 #import "NSObject+kvi_SafeNil.h"
-#import "NSArray+kvi_SafeNil.h"
+
+
+#define KVI_PERFORM_BLOCK(block, ...) if (block != nil) { block(__VA_ARGS__); } 

@@ -11,8 +11,12 @@
 
 @implementation NSObject (kvi_SafeNil)
 
-- (void)performSelectorIfRespondToWithParamethers {
+- (void)kvi_performSelector:(SEL)selector {
     
+    if ([self respondsToSelector:selector]) {
+        
+        [self performSelector:selector];
+    }
 }
 
 @end
